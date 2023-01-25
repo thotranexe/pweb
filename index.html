@@ -9,21 +9,24 @@
 * {
   box-sizing: border-box;
 }
+@font-face { font-family: monocraft; src: url('Monocraft.TTF'); }
 .flex-container {
     display: flex;
     flex-direction: row;
-
 }
 
 .flex-child {
-    flex: 2 1 0;
-    border: 2px solid yellow;
+    flex: 2;
+    /*border: 2px solid yellow;*/
+    margin-right: 100px;
 }  
 
 .flex-child:first-child {
-    flex: 1 0 0;
-    margin-right: 20px;
+    flex: 0 2 200px;
+    margin-left: 100px;
+    margin-right: 40px;
     width: 200px;
+   /* border: 2px solid seagreen;*/
 } 
 
 /* Style the body */
@@ -93,16 +96,10 @@ body {
     flex: 70%;
     color:whitesmoke;
     background-color: rgb(33, 33, 33);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monocraft;
     padding: 20px;
 }
 
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-}
 .footer {
         padding: 20px;
         text-align: center;
@@ -115,6 +112,13 @@ body {
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
+  }
+  .flex-child{
+    margin-right: auto;
+  }
+  .flex-child:first-child{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -153,10 +157,7 @@ body {
       <h1>Experience</h1>
     </div>
     <div class="flex-container">
-      <div class="flex-child" style="width: 25%;">
-        <div class="fakeimg" style="height: 200px;width: 200px; margin:auto">
-        </div>
-      </div> 
+      <div class="flex-child"><img src="footer-seal.png" width="200px" height="200px" ></div>
       <div class="flex-child">
         <h2>Jersey City Public Saftey</h2>
         <h5>Seasonal Worker, August 2022 - Current</h5>

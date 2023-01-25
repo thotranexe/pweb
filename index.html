@@ -9,6 +9,22 @@
 * {
   box-sizing: border-box;
 }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-child {
+    flex: 2 1 0;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child {
+    flex: 1 0 0;
+    margin-right: 20px;
+    width: 200px;
+} 
 
 /* Style the body */
 body {
@@ -86,7 +102,6 @@ body {
 .fakeimg {
   background-color: #aaa;
   width: 100%;
-  padding: 20px;
 }
 .footer {
         padding: 20px;
@@ -96,8 +111,10 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row {   
+  .flex-container {   
     flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
   }
 }
 
@@ -135,10 +152,17 @@ body {
     <div class ="Header">
       <h1>Experience</h1>
     </div>
-    <h2>Jersey City Public Saftey</h2>
-    <h5>Seasonal Worker, August 2022 - Current</h5>
-    <div class="fakeimg" style="height:200px; width:200px;">Icon</div>
-    <p> Currently assisting in maintaining network security, diagnosing and solving vital hardware issues, and directing/instructing other employees on proper security protcols and procedures.</p>
+    <div class="flex-container">
+      <div class="flex-child" style="width: 25%;">
+        <div class="fakeimg" style="height: 200px;width: 200px; margin:auto">
+        </div>
+      </div> 
+      <div class="flex-child">
+        <h2>Jersey City Public Saftey</h2>
+        <h5>Seasonal Worker, August 2022 - Current</h5>
+        <p> Currently assisting in maintaining network security, diagnosing and solving vital hardware issues, and directing/instructing other employees on proper security protcols and procedures.</p>
+      </div>
+    </div>
 </div>
 
 <div class="footer">

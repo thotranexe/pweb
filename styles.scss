@@ -1,7 +1,12 @@
+@font-face { 
+  font-family: monocraft; 
+  src: url('Monocraft.TTF') format('truetype'); 
+}
+
 .bg {
     margin: auto;
     width: 100%;
-    height: 100%;
+    height: 200%;
     display: flex;
     align-items: center;
     justify-content: center;

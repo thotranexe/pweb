@@ -1,0 +1,16 @@
+@font-face { 
+    font-family: alegreya; 
+    src: url('AlegreyaSans-Regular.ttf') format('truetype'); 
+    font-style: normal;
+  }
+@font-face {
+    font-family: exo;
+    src: url('Exo2-VariableFont_wght.ttf') format('truetype');
+}
+
+.h1{
+    font-family: exo;
+}
+.p{
+    font-family: alegreya;
+}

@@ -1,7 +1,11 @@
 @font-face { 
-  font-family: monocraft; 
-  src: url('Monocraft.ttf') format('truetype'); 
+  font-family: alegreya; 
+  src: url('AlegreyaSans-Regular.ttf') format('truetype'); 
   font-style: normal;
+}
+@font-face {
+  font-family: exo;
+  src: url('Exo2-VariableFont_wght.ttf') format('truetype');
 }
 
 .bg {
@@ -21,7 +25,7 @@
     );  
     animation: AnimateBG 20s ease infinite;
     color:beige;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: exo;
   }
 
 .header {
@@ -29,7 +33,7 @@
     padding: 100px;
     text-align: center;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: alegreya;
 }
 
   

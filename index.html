@@ -20,7 +20,8 @@
 .flex-child {
     flex: 2;
     /*border: 2px solid yellow;*/
-    margin-right: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
 }  
 
 .flex-child:first-child {
@@ -31,6 +32,18 @@
    /* border: 2px solid seagreen;*/
 } 
 
+.flex2-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.flex2-child {
+    flex: 1;
+    /*border: 2px solid yellow;*/
+    margin-right: 50px;
+    margin-left: 50px;
+}  
 
 body {
   /*font-family: Arial, Helvetica, sans-serif;*/
@@ -52,6 +65,10 @@ body {
   font-size: 40px;
 }
 
+.header p{
+  text-align: center;
+}
+
 .main h1{
   text-align: center;
   font-family: exo;
@@ -59,7 +76,7 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: exo;
   overflow: hidden;
   background-color: rgb(0, 0, 0);
 }
@@ -128,6 +145,19 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .flex2-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .flex2-child{
+    align-self: center;
+    margin-right: auto;
+  }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -171,6 +201,24 @@ body {
         <h3>Seasonal Worker, August 2022 - Current</h3>
         <p> Currently assisting in maintaining network security, diagnosing and solving vital hardware issues, and directing/instructing other employees on proper security protcols and procedures.</p>
       </div>
+    </div>
+    <div class ="Header">
+      <h1>Projects</h1>
+      <p style="text-align: center;">Click on any of the icons or my projects page to learn more!</p>
+    </div>
+    <div class= "flex2-container">
+      <div class="flex2-child">
+        <h2>Personal Website</h2>
+        <a href="wip.html"><img src="hero-image.webp" height="200px" width="200px"></img></a>
+      </div>
+      <div class="flex2-child">
+        <h2>Android Wordle Clone</h2>
+        <a href="wip.html"><img src="wordle.png" height="200px" width="200px"></img></a>
+      </div>
+      <div class="flex2-child">
+        <h2>Web banking app</h2>
+        <a href="wip.html"><img src="bank.png" height="200px" width="200px"></img></a>
+      </div>  
     </div>
 </div>
 

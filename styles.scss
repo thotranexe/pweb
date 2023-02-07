@@ -1,27 +1,27 @@
 
 .bg {
-    margin: 0;
-    display: flex;
-    height: 60vh;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    background-size: 300% 300%;
-    background-image: linear-gradient(-45deg,#dd5a5a 0%, #e1d0d0 25%,#79a5f0 51%,#41e5fb 100%,);  
-    animation: AnimateBG 20s ease infinite;
-    color:beige;
-  }
-
-.banner {
-    width:100%;
-    //height: 250vh;
-    padding: 100px;
-    text-align: center;
-    color: white;
+  margin: 0;
+  display: flex;
+  height: 60vh;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg,#dd5a5a 0%, #e1d0d0 25%,#79a5f0 51%,#41e5fb 100%,);  
+  animation: AnimateBG 20s ease infinite;
+  color: whitesmoke;
 }
 
-  @keyframes AnimateBG { 
+.banner {
+  width:100%;
+  //height: 250vh;
+  padding: 100px;
+  text-align: center;
+  color: white;
+}
+
+@keyframes AnimateBG { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-  }
+}

@@ -7,6 +7,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    @media screen and (max-width: 925px) {
+    .flex-container {   
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        }
+        .flex-child{
+        margin-left: 20px;
+        margin-right: 20px;
+        }
+    }
     * {
      box-sizing: border-box;
     }
@@ -28,7 +39,6 @@
         margin: 0;   
         -ms-flex: 100; /* IE10 */
         flex: 100%;
-        text-align: center;
         color:whitesmoke;
         background-color: rgb(33, 33, 33);
         font-family: alegreya;
@@ -36,10 +46,12 @@
     }
     .main h1{
         font-family: exo;
+        text-align: center;
         font-size: 40px;
     }
     .main h2{
         font-family: exo;
+        text-align: center;
         font-size: 30px;
     }
     .main p{

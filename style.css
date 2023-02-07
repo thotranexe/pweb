@@ -3,7 +3,9 @@
     src: url('SpaceMono-Regular.ttf') format('truetype'); 
     font-style: normal;
 }
-
+.main{
+    font-family: space;
+}
 .header{
     font-family: space;
 }

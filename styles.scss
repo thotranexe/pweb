@@ -7,8 +7,7 @@
     align-items: center;
     justify-content: center;
     //background-size: 300% 300%;
-    background-image:linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
-    //linear-gradient(-45deg,#dd5a5a 0%, #e1d0d0 25%,#79a5f0 51%,#41e5fb 100%,);  
+    background-image: linear-gradient(-45deg,#dd5a5a 0%, #e1d0d0 25%,#79a5f0 51%,#41e5fb 100%,);  
     animation: AnimateBG 20s ease infinite;
     color:beige;
   }
@@ -20,9 +19,9 @@
     text-align: center;
     color: white;
 }
-/*
+
   @keyframes AnimateBG { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-  }*/
+  }

@@ -7,7 +7,12 @@
   align-items: center;
   justify-content: center;
   background-size: 300% 300%;
-  background-image: linear-gradient(-45deg,#dd5a5a 0%, #e1d0d0 25%,#79a5f0 51%,#41e5fb 100%,);  
+  background-image: linear-gradient(
+    -45deg,
+    rgb(221, 90, 90) 0%,
+    rgb(225, 208, 208) 25%,
+    rgb(121, 165, 240) 51%,
+    rgb(65, 229, 251) 100%,);  
   animation: AnimateBG 20s ease infinite;
   color: whitesmoke;
 }

@@ -10,6 +10,16 @@
     * {
      box-sizing: border-box;
     }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-child {
+        flex: 2;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
     body {
         font-family: exo;
         margin: 0;
@@ -65,35 +75,47 @@
 </div>
 <div class="main">
     <h1>Web Development</h1>
-    <h2>Personal Website</h2>
-    <p>
-        The site you are currently browsing! All of this is coded by hand using
-        primarly HTML and CSS. I used github to deploy all changes made to my university's
-        webserver. In order to push changes more effeciently I used bash scripts to automate
-        pushing a commiting to Github, in addition to remotely connecting to server to manually
-        pull any final changes.
-    </p>
-    <h2>Web Banking App</h2>
-    <p> 
-        In my 3rd year of university I took a course primarly focused of Web Application development.
-        In order to gain a better understanding of the process student were tasked to pick from a list
-        of projects to implement. This project used HTML, PHP, JavaScript, CSS, and NoSQL.
-        The key funtionalities for the banking app were implemented over mock sprints. 
-        The app was primarly deployed through heroku, but used Github as the version control System.
-    </p>
+    <div class="flex-container">
+        <div class="flex-child">
+        <h2>Personal Website</h2>
+        <p>
+            The site you are currently browsing! All of this is coded by hand using
+            primarly HTML and CSS. I used github to deploy all changes made to my university's
+            webserver. In order to push changes more effeciently I used bash scripts to automate
+            pushing a commiting to Github, in addition to remotely connecting to server to manually
+            pull any final changes.
+        </p>
+        </div>
+        <div class="flex-child">
+        <h2>Web Banking App</h2>
+        <p> 
+            In my 3rd year of university I took a course primarly focused of Web Application development.
+            In order to gain a better understanding of the process student were tasked to pick from a list
+            of projects to implement. This project used HTML, PHP, JavaScript, CSS, and NoSQL.
+            The key funtionalities for the banking app were implemented over mock sprints. 
+            The app was primarly deployed through heroku, but used Github as the version control System.
+        </p>
+        </div>
+    </div>
     <h1>Mobile Development</h1>
-    <h2>Wordle Clone</h2>
-    <p>
-        A simple clone to the classic game Wordle. Using Andriod SDK, Kotlin, and XML students were tasked
-        with creating a funtional wordle clone mobile app. In order to recreate the app, an understanding of
-        XML files, as well as UI development, using a kotlin file to control the main actvites interactivity,
-        and game mechanics.
-    </p>
-    <h2>Gmail Clone</h2>
-    <p>
-        A simple clone of the gmail app. To recreate the gmail app, Object Oriented Programing with kotlin
-        was required in order to properly display the sender, subject line, and contents of mock emails.
-    </p>
+    <div class="flex-container">
+        <div class="flex-child">
+        <h2>Wordle Clone</h2>
+        <p>
+            A simple clone to the classic game Wordle. Using Andriod SDK, Kotlin, and XML students were tasked
+            with creating a funtional wordle clone mobile app. In order to recreate the app, an understanding of
+            XML files, as well as UI development, using a kotlin file to control the main actvites interactivity,
+            and game mechanics.
+        </p>
+        </div>
+        <div class="flex-child">
+        <h2>Gmail Clone</h2>
+        <p>
+            A simple clone of the gmail app. To recreate the gmail app, Object Oriented Programing with kotlin
+            was required in order to properly display the sender, subject line, and contents of mock emails.
+        </p>
+        </div>
+    </div>
     <h1> Database managment</h1>
     <h2>Girl Scout Cookie Database</h2>
     <p>
@@ -102,29 +124,39 @@
         take inventory, store customer information, and track inventory shipments.
     </p>
     <h1> Data structures and Algorithms</h1>
-    <h2> 15 puzzle solver</h2>
-    <p>
-        In order to gain a better understanding of path-finding algorithms, this project required using
-        Dikstras algorithm to analyze gamestates and choose the best path to solve the 15 puzzle.
-    </p>
-    <h2>Email Validater</h2>
-    <p>
-        During my automata course, to truly understand turing machines and their abstractness students were tasked
-        to create an email validater with the caveat of mimicking turing machine. 
-    </p>
+    <div class="flex-container">
+        <div class="flex-child">
+        <h2> 15 puzzle solver</h2>
+        <p>
+            In order to gain a better understanding of path-finding algorithms, this project required using
+            Dikstras algorithm to analyze gamestates and choose the best path to solve the 15 puzzle.
+        </p>
+        </div>
+        <div class="flex-child">
+        <h2>Email Validater</h2>
+        <p>
+            During my automata course, to truly understand turing machines and their abstractness students were tasked
+            to create an email validater with the caveat of mimicking turing machine. 
+        </p>
+        </div>
     <h1>Data analysis</h1>
-    <h2>Turberculosis Predictor</h2>
-    <p>
-        Using a dataset of medical records of those with turberculosis, A teamate and I created a program
-        that could accurately predict and diagnose prospective patients for turberculosis. We primarly
-        used google colab and python notebooks to train a model that produces an accurate result within
-        88% accuracy.
-    </p>
-    <h2>Wine Quality Predictor</h2>
-    <p>
-        During my Introduction to datamining course, I created an accurate prediction model that would
-        tell the user wether or not their wine would be of high quality based on the inputted characteristics 
-    </p>
+    <div class="flex-container">
+        <div class="flex-child">
+        <h2>Turberculosis Predictor</h2>
+        <p>
+            Using a dataset of medical records of those with turberculosis, A teamate and I created a program
+            that could accurately predict and diagnose prospective patients for turberculosis. We primarly
+            used google colab and python notebooks to train a model that produces an accurate result within
+            88% accuracy.
+        </p>
+        </div>
+        <div class="flex-child">
+        <h2>Wine Quality Predictor</h2>
+        <p>
+            During my Introduction to datamining course, I created an accurate prediction model that would
+            tell the user wether or not their wine would be of high quality based on the inputted characteristics 
+        </p>
+        </div>
 </div>
 <div class="footer">
     <a href="index.html"> Back to Homepage <a>

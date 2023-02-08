@@ -9,10 +9,10 @@
   background-size: 400% 400%;
   background-image: linear-gradient(
     -45deg,
-    rgb(117, 36, 36) 0%,
-    rgb(62, 55, 55) 25%,
-    rgb(121, 165, 240) 51%,
-    rgb(65, 229, 251) 100%);  
+    rgb(65, 229, 251) 0%,
+    rgb(121, 165, 240) 25%,
+    rgb(62, 55, 55) 51%,
+    rgb(117, 36, 36) 100%);  
   animation: AnimateBG 20s ease infinite;
   color: whitesmoke;
 }

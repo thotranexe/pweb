@@ -11,25 +11,16 @@
 * {
   box-sizing: border-box;
 }
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
+.btncontainer{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top:5px;
+  left:2px;
 }
-
-.flex-child {
-    flex: 2;
-    margin-right: 50px;
-    margin-left: 50px;
-}  
-
-.flex-child:first-child {
-    flex: 0 2 200px;
-    margin-left: 100px;
-    margin-right: 40px;
-    width: 200px;
-   /* border: 2px solid seagreen;*/
-} 
 
 .flex2-container {
     display: flex;
@@ -96,7 +87,7 @@ body {
 .projectsbtn{
   position: absolute;
   top: 5px;
-  left: 15px;
+  left: 35px;
   background-color:transparent;
   color: rgb(53, 255, 53);
   padding: 10px 20px;
@@ -105,7 +96,6 @@ body {
   display: flex;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 16px;
   font-family: space;
 }
 .main {   
@@ -255,8 +245,10 @@ body {
 </head>
 <body>
 <div class="bg">
-  <button class="resumebtn"> RESUME</button>
-  <button class="projectsbtn">PROJECTS</button>
+  <div class="btncontainer">
+    <button class="resumebtn"> RESUME</button>
+    <button class="projectsbtn">PROJECTS</button>
+  </div>
   <button class="contactbtn">GET IN TOUCH</button>
     <div class="header">
     <h1>&lt;Tho Tran&gt;</h1>

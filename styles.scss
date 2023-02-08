@@ -30,13 +30,13 @@
 }
 
 .box {
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 10px;
 }
 
 .box p {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 5px;
   font-family: space;
 }
 
@@ -48,7 +48,7 @@
 
 .box p::after {
   content: "";
-  width: 5px;
+  width: 7px;
   height: 20px;
   background: whitesmoke;
   display: inline-block;

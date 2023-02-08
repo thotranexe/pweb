@@ -101,7 +101,14 @@ body {
 .main p{
   font-size: 20px;
 }
-
+.alt{
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  color:rgb(53, 255, 53);
+  background-color:  #414349;
+  padding: 20px;
+  margin: auto;
+}
 .footer {
   padding: 20px;
   text-align: center;
@@ -125,7 +132,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .flex2-container {
+  /*.flex2-container {
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -136,7 +143,7 @@ body {
   }
   .flex2-child{
     margin-right: 5vh;
-  }
+  }*/
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -149,9 +156,6 @@ body {
 </style>
 </head>
 <body>
-
-
-
 <div class="bg">
   <button class="contactbtn">Get In Touch</button>
     <div class="header">
@@ -159,78 +163,39 @@ body {
     <p>Software Engineer</p>
     </div>
 </div>
-
-
 <div class="main">
-    <div class ="Header">
-      <h1>About Me</h1>
-    </div>
-    <p>I was born and raised in Jersey City. A majority of my childhood was spent playing video games and my passion for games led me to learn to code. In my highschool senior year I took my first course in coding, "AP Introduction To Java". Once I graduated I intended to pursue a game design degree. After careful consideration I decided instead that learning computer science would be best suited for my needs and passion. I graduate from NJIT in may of 2023</p>
-    <div class ="Header">
-      <h1>Experience</h1>
-    </div>
-    <div class="flex-container">
-      <div class="flex-child"><img src="footer-seal.png" width="200px" height="200px" ></div>
-      <div class="flex-child">
-        <h2>Jersey City Public Saftey</h2>
-        <h3>Seasonal Worker, August 2022 - Current</h3>
-        <p> Currently assisting in maintaining network security, diagnosing and solving vital hardware issues, and directing/instructing other employees on proper security protcols and procedures.</p>
-      </div>
-    </div>
-    <div class ="Header">
-      <h1>Projects</h1>
-      <p style="text-align: center;">Click on any of the icons or my projects page to learn more!</p>
-    </div>
-    <div class= "flex2-container">
-      <div class="flex2-child">
-        <h2>Personal Website</h2>
-        <a href="wip.html"><img src="hero-image.webp" height="200px" width="200px"></img></a>
-      </div>
-      <div class="flex2-child">
-        <h2>Android Wordle Clone</h2>
-        <a href="wip.html"><img src="wordle.png" height="200px" width="200px"></img></a>
-      </div>
-      <div class="flex2-child">
-        <h2>Web banking app</h2>
-        <a href="wip.html"><img src="bank.png" height="200px" width="200px"></img></a>
-      </div>  
-    </div>
-    <div class ="Header">
-      <h1>Skills</h1>
-    </div>
-    <div class= "flex2-container">
-      <div class="flex2-child">
-        <h2>Webdev</h2>
-        <li>HTML</li>
-        <li>PHP</li>
-        <li>CSS</li>
-      </div>
-      <div class="flex2-child">
-        <h2>Backend</h2>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C/C++</li>
-      </div>
-      <div class="flex2-child">
-        <h2>Databases</h2>
-        <li>SQL</li>
-        <li>NoSQL</li>
-      </div>
-      <div class="flex2-child">
-        <h2>Mobile</h2>
-        <li>SDK</li>
-        <li>Kotlin</li>
-      </div>
-      <div class="flex2-child">
-        <h2>Operating Systems</h2>
-        <li>Linux</li>
-        <li>Unix(macOS)</li>
-        <li>Windows</li>
-      </div>
-    </div>
+  <div class="header"><h1>About Me</h1></div>
+  <p>I was born and raised in Jersey City. A majority of my childhood was spent playing video games and my passion for games led me to learn to code. In my highschool senior year I took my first course in coding, "AP Introduction To Java". Once I graduated I intended to pursue a game design degree. After careful consideration I decided instead that learning computer science would be best suited for my needs and passion. I graduate from NJIT in may of 2023</p>
 </div>
-
-<div class="footer">
+<div class="altmain">
+  <div class="header"><h1>Experience</h1></div>
+  <h2>Jersey City's Department of Public Saftey</h2>
+  <h3>It Help Desk Technician, August 2022 - Current</h3>
+  <p>I am currently assisting in maintaining network security, diagnosing and solving vital hardware | software issues, and directing/instructing other employees on proper security protcols and procedures.</p>
+</div>
+<div class="main">
+  <h1>Experience</h1>
+  <div class="flex2-child">
+    <a href="wip.html"><img src="hero-image.webp" height="100px" width="100px"></img></a>
+    <h2>Personal Website</h2>
+  </div>
+  <div class="flex2-child">
+    <a href="wip.html"><img src="wordle.png" height="100px" width="100px"></img></a>
+    <h2>Android Wordle Clone</h2>
+  </div>
+  <div class="flex2-child">
+    <a href="wip.html"><img src="bank.png" height="100px" width="100px"></img></a>
+    <h2>Web banking app</h2>
+  </div>  
+</div>
+<div class="altmain">
+  <h1>Skills</h1>
+  <p>WEBDEV (HTML, PHP, CSS)</p>
+  <p>BACKEND (PYTHON, JAVA, C/C++)</p>
+  <p>DATABASES (SDK, KOTLIN)</p>
+  <p>OPERATING SYSTEMS (LINUX, UNIX[MACOS], WINDOWS)</p>
+</div>
+<div class="bg" height="20vh">
   <h2>Contact Me!</h2>
   <br>thotranexe@gmail | tvt4@njit.edu</br>
   <br>201-744-0153</br>
